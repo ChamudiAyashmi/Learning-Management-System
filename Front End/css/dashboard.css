@@ -37,7 +37,7 @@ body{
     color: white;
     font-size: 20px;
 }
-.btnLogin{
+.btnRegister{
     margin-left: 20px;
     color: white;
     background-color: black;
@@ -48,26 +48,50 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-.btnLogin:hover{
-    color: black;
+.btnRegister:hover{
+    color: white;
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid white;
 }
 .view-students{
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 2%;
-    
 }
 .table-content{
    
 }
 .student-tbl{
-    background-color: #F4F4F4;
-    width: 100%;
-    padding: 2%;
+    width: 100%;    
 }
 .student-tbl th{
     padding: 1%;
-    
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #009A7E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.student-tbl td{
+    background-color: #F4F4F4;
+    padding: 1%; 
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.student-tbl td button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #009A7E;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.student-tbl td button:hover{
+    background-color: black;
+    border: 2px solid white;
 }
