@@ -20,11 +20,21 @@ btnCreate.addEventListener("click",()=>{
     })
     .then(response => response.json())
     .then(response => console.log(stringify(response)))
-
+    if(adminUsername.value=="" | adminPassword.value=="" | adminEmail.value==""){
+        
+        window.open("../createAccount.html","_top");
+        alert("Failed")
+    }else{
+        alert("Account Created Successfully")
+        window.open("../index.html","_top");
+    }
+    
     adminUsername.value='';
     adminPassword.value='';
     adminEmail.value='';
 
+  
 
-    window.open("../index.html","_top");
+
+   
 })
