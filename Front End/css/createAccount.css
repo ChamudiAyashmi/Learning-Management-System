@@ -54,29 +54,26 @@ body{
     border: 2px solid black;
 }
 
-/* form
-
-.create-account-container{
-    
-    margin: 4%;
-}
-.create-account-container  */
+/* form*/
 
  .logreg-box{
+    /* padding: 2%; */
     /* padding: 20px;
      width: 500px; */
      height: 100%;
+     width: 100%;
  }
  .login{
-    margin: 4%;
-     display: flex;
-     flex-wrap: wrap;
-     gap: 1.5rem;
-     background-color: #F4F4F4;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: #F4F4F4;
  }
  .login .login-content{
      flex: 1 1 40rem;
-     padding: 10px;
      display: flex;
  }
  .login .image1{
@@ -87,22 +84,9 @@ body{
      height: 100%;
  }
  .login-form{
-    
-     margin-left: 50px;
-     padding-bottom: 30px;
- }
- .text-sci h2{
-     margin-top: 20px;
-     font-size: 40px;
-     line-height: 1;
- }
- 
- .text-sci h2 span{
-     font-size: 25px;
- 
- 
- }
- 
+    padding: 2%;
+    margin-right: 2%;
+}
  .social-icons a i{
      font-size: 22px;
      color: black;
@@ -114,38 +98,29 @@ body{
      transform: scale(1.2);
  }
  
- .text-sci p{
+ /* .text-sci p{
       font-size: 16px;
       margin: 20px 0;
- }
+ } */
  
  .logreg-box .form-box{
      display: flex;
      justify-content: center;
      align-items: center;
-     background: transparent;
-     color: #333;
      height: 100%;
      width: 100%;
-     /* backdrop-filter: blur(10px); */
      border-top-right-radius: 10px;
      border-bottom-right-radius: 10px;
  }
  .user-icon{
      font-size: 61px;
      margin-left: 138px;
-    
- 
- }
- 
- .form-box h2{
+}
+.form-box h2{
      font-size: 32px;
-     text-align: center;
-     
- }
- 
- 
- .form-box .input-box{
+     text-align: center;     
+}
+.form-box .input-box{
      position: relative;
      width: 340px;
      height: 50px;
@@ -169,6 +144,7 @@ body{
      left: 0;
      transform: translateY(-50%);
      font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
      font-weight: 500;
      pointer-events: none;
      transition: .5s ease;
@@ -184,31 +160,17 @@ body{
      top: 13px;
      right: 0;
      font-size: 19px;
- 
- }
+}
  
  .form-box .remember-forgot{
      font-size: 14.5px;
+     font-family: Arial, Helvetica, sans-serif;
      font-weight: 500;
      margin: -15px 0 15px;
      display: flex;
      justify-content: space-between;
  }
- 
- .remember-forgot label input{
-     accent-color: #e4e4e4;
-     margin-right: 3px;
- } 
- .remember-forgot  a{
-     color: #333;
-     text-decoration: none;
- }
- 
- .remember-forgot a:hover{
-     text-decoration: underline;
- }
- 
- .btn{
+.btn{
      width: 100%;
      height: 35px;
      border: none;
@@ -222,25 +184,6 @@ body{
      color: white;
  }
  .btn:hover{
-     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(190,29,253,1) 0%, rgba(252,176,69,1) 100%);
- 
- }
- 
- .form-box .login-register{
-     font-size: 14.5px;
-     font-weight: 500;
-     text-align: center;
-     margin-top: 25px;
- 
- }
- 
-  .login-register p a{
-     color: #333;
-     font-size: 600;
-     text-decoration: none;
- 
- } 
- 
-  .login-register p a:hover{
-     text-decoration: underline;
- }
+     background: #009A7E; 
+}
+
