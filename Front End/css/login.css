@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: #009A7E;
+}
+
+/* header section */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+.logo span{
+    color: black;
+}
+.navbar{
+    margin-right: 4%;
+}
+.navbar a{
+    padding: 10px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
