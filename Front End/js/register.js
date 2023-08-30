@@ -29,6 +29,14 @@ btnRegister.addEventListener("click",()=>{
         "gender" : selectGender
     }
 
-    fetch('http://localhost:8080/student')
+    fetch('http://localhost:8080/student',{
+        method: 'POST',
+        headers: {
+            'Content-type':'application/json' 
+        },
+        body: JSON.stringify(student)
+    })
+    .then(response => response.json())
+    
 
 })
