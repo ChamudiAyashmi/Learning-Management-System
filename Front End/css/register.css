@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #009A7E;
+}
+
+/* header section */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 4%;
+}
+.logo span{
+    color: black;
+}
+.navbar{
+    margin-right: 4%;
+}
+
+.navbar a{
+    padding: 10px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.btnLogin{
+    margin-left: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnLogin:hover{
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+/* .register{
+    background-color: red;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+} */
+
+/* registration form */
+
+.register{
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.register .register-content{
+    flex: 1 1 40rem;
+}
+.register .image{
+    flex: 1 1 40rem;
+}
+.register .image img{
+    width: 100%;
+}
+
+.register-content{
+    max-width: 50%;
+    padding: 28px;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #009A7E;
+}
+.regi-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.regi-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 10px;
+}
+.regi-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.regi-input-box label, .gender-title{
+    width: 95%;
+    font-weight: bold;
+    font-size: 18px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 5px 0;
+}
+.gender-title{
+    font-size: 16px;
+}
+
+.regi-input-box input{
+    height: 35px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #009A7E;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #333;
+}
+
+
+.regi-input-box input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+    font-size: 16px;
+}
+
+.gender-category{
+    color: #333;
+}
+
+.gender-category label, .gender-category input{
+    cursor: pointer;
+}
+#buttonRegister{
+    width: 50%;
+    padding: 8px;
+    display: block;
+    font-size: 20px;
+     background-color: black;
+     color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+#buttonRegister a{
+    color: white;
+    text-decoration: none;
+}
+#buttonRegister:hover{
+    background-color: #009A7E;
+}
+
+
+
+

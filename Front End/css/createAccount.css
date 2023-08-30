@@ -57,9 +57,6 @@ body{
 /* form*/
 
  .logreg-box{
-    /* padding: 2%; */
-    /* padding: 20px;
-     width: 500px; */
      height: 100%;
      width: 100%;
  }
@@ -97,12 +94,6 @@ body{
  .social-icons a :hover i{
      transform: scale(1.2);
  }
- 
- /* .text-sci p{
-      font-size: 16px;
-      margin: 20px 0;
- } */
- 
  .logreg-box .form-box{
      display: flex;
      justify-content: center;
