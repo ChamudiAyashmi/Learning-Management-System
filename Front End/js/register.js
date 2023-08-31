@@ -37,6 +37,7 @@ btnRegister.addEventListener("click",()=>{
         body: JSON.stringify(student)
     })
     .then(response => response.json())
+    alert("Registered Success");
     
 
 })
