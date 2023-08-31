@@ -102,8 +102,20 @@ body{
 }
 
 /* body section 1 */
+
+.section1{
+    margin-top: 4%;
+    /* background-color: purple; */
+}
+.section1 h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .myCards{
     display: flex;
+    /* background-color: red; */
     
 }
 .square{
@@ -117,7 +129,12 @@ body{
     background-color: #F4F4F4;
     display: flex;
     border-radius: 5px;
-    margin: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+
+    /* margin: 4%; */
    
 }
 .card-content h5{
