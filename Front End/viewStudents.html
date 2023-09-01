@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/viewStudents.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
             <!-- header section -->
@@ -17,7 +18,9 @@
                     <a href="index.html">Home</a>
                     <a href="">About</a>
                     <a href="">Contact</a>
-                    <input type="text">
+                    <input id="searchBar" type="text" placeholder="search">
+                    <button class="btnSearch" onclick="search()" id="btnSearch"><i class='bx bx-search-alt-2'></i></button>
+                    
                 </nav>
             </header>
 
@@ -25,51 +28,12 @@
 
                 
                 
-                    <div border="1" class="tbl" id="tbl">
-                        <!-- <tr>
-                            
-                        </tr>
-                        <div class="profile-dards">
-
-                        </div> -->
-                        <!-- <tr>
-                            <th colspan="2">Chamudi</th>
-                        </tr>
-                        <tr>
-                            <td>Student ID :</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>First Name :</td>
-                            <td>Chamudi</td>
-                        </tr>
-                        <tr>
-                            <td>Last Name :</td>
-                            <td>Ayashmi</td>
-                        
-                        </tr>
-                        <tr>
-                            <td>Email : </td>
-                            <td>chamudi2003@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Age :</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>Address :</td>
-                            <td>Panadura</td>
-                        </tr>
-                        <tr>
-                            <td>Phone Number :</td>
-                            <td>0717518477</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr> -->
-                        
-                     
+                    <div border="1" class="tbl" id="tbl"> 
                     </div>
+                    <div border="1" class="profile" id="profile"> 
+                    </div>
+
+
              
 
             </section>

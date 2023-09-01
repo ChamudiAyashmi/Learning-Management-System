@@ -89,3 +89,28 @@ body{
     margin: 2%;
     font-family: Arial, Helvetica, sans-serif;
  }
+
+ input{
+    height: 30px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+ }
+
+ input ::placeholder{
+    color: white;
+ }
+
+ .btnSearch{
+    height: 30px;
+    width: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+ }

@@ -134,6 +134,18 @@ h2{
     color: #333;
 }
 
+.Guardians-input{
+
+}
+.Guardians-Title{
+    
+}
+
+.regi-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .regi-input-box input:is(:focus,:valid){
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
@@ -150,6 +162,10 @@ h2{
 
 .gender-category label, .gender-category input{
     cursor: pointer;
+}
+
+h3{
+    margin-top: 4%;
 }
 #buttonRegister{
     width: 50%;

@@ -7,6 +7,11 @@ const age = document.getElementById("txtAge");
 const address = document.getElementById("txtAddress");
 const phoneNumber = document.getElementById("txtPhone");
 const gender = document.getElementsByName("gender");
+const guardiansName = document.getElementById("txtGuardiansName");
+const guardiansAddress = document.getElementById("txtGuardiansPhone");
+const guardiansPhone = document.getElementById("txtGuardiansAddress");
+const guardiansEmail = document.getElementById("txtGuardiansEmail");
+
 const btnRegister = document.getElementById("buttonRegister");
 
 btnRegister.addEventListener("click",()=>{
@@ -26,7 +31,15 @@ btnRegister.addEventListener("click",()=>{
         "age" : age.value,
         "address" : address.value,
         "phoneNumber" : phoneNumber.value,
-        "gender" : selectGender
+        "gender" : selectGender,
+        "guardiansName":guardiansName.value,
+        "guardiansAddress" : guardiansAddress.value,
+        "guardiansPhoneNumber" : guardiansPhone.value,
+        "guardiansEmail" : guardiansEmail.value
+
+
+
+
     }
 
     fetch('http://localhost:8080/student',{
