@@ -17,7 +17,7 @@ btnLogin. addEventListener("click",()=>{
             //     'success'
             //   )
             alert("Success");
-            window.open("../dashboard.html","_top");
+            window.open("../viewStudents.html","_top");
     
          
          

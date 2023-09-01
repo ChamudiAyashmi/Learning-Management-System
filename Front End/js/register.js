@@ -36,10 +36,6 @@ btnRegister.addEventListener("click",()=>{
         "guardiansAddress" : guardiansAddress.value,
         "guardiansPhoneNumber" : guardiansPhone.value,
         "guardiansEmail" : guardiansEmail.value
-
-
-
-
     }
 
     fetch('http://localhost:8080/student',{
@@ -51,6 +47,7 @@ btnRegister.addEventListener("click",()=>{
     })
     .then(response => response.json())
     alert("Registered Success");
+    window.open("../viewStudents.html","_top");
     
 
 })
