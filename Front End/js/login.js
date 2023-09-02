@@ -18,9 +18,6 @@ btnLogin. addEventListener("click",()=>{
             //   )
             alert("Success");
             window.open("../dashboard.html","_top");
-    
-         
-         
             tempUserName.value="";
             tempPassword.value="";
 

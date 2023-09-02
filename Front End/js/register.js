@@ -46,8 +46,22 @@ btnRegister.addEventListener("click",()=>{
         body: JSON.stringify(student)
     })
     .then(response => response.json())
-    alert("Registered Success");
-    window.open("../dashboard.html","_top");
-    
-
+    if(firstName.value=="" | 
+    lastName.value=="" | 
+    userName.value=="" |
+    password.value=="" | 
+    email.value=="" |
+    age.value=="" | 
+    address.value=="" | 
+    phoneNumber.value=="" |
+    gender.value=="" |
+    guardiansName.value=="" |
+    guardiansAddress.value=="" | 
+    guardiansPhone.value=="" |
+    guardiansEmail.value=="" ){
+        alert("Registered Failed");
+    }else{
+        alert("Registered Success");
+        window.open("../dashboard.html","_top");
+    }
 })
