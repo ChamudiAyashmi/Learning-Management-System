@@ -47,7 +47,7 @@ btnRegister.addEventListener("click",()=>{
     })
     .then(response => response.json())
     alert("Registered Success");
-    window.open("../viewStudents.html","_top");
+    window.open("../dashboard.html","_top");
     
 
 })

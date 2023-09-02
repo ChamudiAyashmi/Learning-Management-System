@@ -37,6 +37,32 @@ body{
     color: white;
     font-size: 20px;
 }
+
+input{
+    height: 30px;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+ }
+
+ input ::placeholder{
+    color: white;
+ }
+
+ .btnSearch{
+    height: 30px;
+    width: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+ }
+
 .btnRegister{
     margin-left: 20px;
     color: white;
@@ -54,8 +80,8 @@ body{
     border: 2px solid white;
 }
 .view-students{
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 2%;
 }
 .student-tbl{
@@ -91,4 +117,109 @@ body{
 .student-tbl td button:hover{
     background-color: black;
     border: 2px solid white;
+}
+
+.profile{
+    background-color: #E0E0E0;
+    width: 100%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+}
+.title{
+    padding: 4%;
+    border: 1px solid white;
+}
+.profile-h2{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content{
+    border: 1px solid white;
+    background-color: #F4F4F4;
+    display: flex;
+}
+.image-div{
+    border: 1px solid white;
+    padding: 4%;
+    margin: 4%;
+    border-radius: 5px;
+    height: 50%;
+    background-color: white;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid white;
+    background-color: #E0E0E0;
+}
+.name{
+    text-align: center;
+    margin: 2%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #A0A0A0;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 4%;
+    width: 100%;
+    border-radius: 5px;
+}
+.div1{
+    border: 2px solid #A0A0A0;
+    background-color: #009A7E;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1.5%;
+}
+.div1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E0E0E0;
+}
+.box{
+    background-color: white;
+   
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 47%;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div3{
+    background-color: #009A7E;
+    padding: 1.5%;
+}
+.div3 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div4{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E0E0E0;
+}
+.div5{
+    background-color: #009A7E;
+    padding: 1.5%;
+}
+.div5 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.div6{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E0E0E0;
 }
