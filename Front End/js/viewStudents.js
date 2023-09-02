@@ -1,7 +1,7 @@
 let studentTable = document.getElementById("tbl");
 let profile = document.getElementById("profile");
 
-function loadeProfile(){
+function loadProfile(){
     fetch("http://localhost:8080/student")
     .then(response => response.json())
     .then(res => {
@@ -28,47 +28,7 @@ function loadeProfile(){
 
 }
 
-loadeProfile();
-
-// function search(){
-//     const srarchBarVal = document.getElementById("searchBar").value;
-    
-
-//     var requestOptions = {
-//         method: 'GET',
-//         redirect: 'follow'
-//       };
-      
-//       fetch(`http://localhost:8080/student/byFirstName/${srarchBarVal}`, requestOptions)
-//         .then(response => response.json())
-//         .then(result =>{
-//             let body = ``
-//             result.forEach(element => {
-                
-//                 body += `
-                  
-//                     <div class="profile">
-//                         <div class Content>
-//                         <h2>${element.firstName+" "+element.lastName}</h2>
-//                         <div class="span"><span>Student Id : S00${element.id}</span><br></div>
-//                         <div class="span"><span>First Name : ${element.firstName}</span><br></div>
-//                         <div class="span"><span>Last Name : ${element.lastName}</span><br></div>
-//                         <div class="span"> <span>Email : ${element.emailAddress}</span><br></div>
-//                         <div class="span"><span>Address : ${element.address}</span><br></div>
-//                         <div class="span"><span>Phone Nuber : ${element.phoneNumber}</span><br></div>
-//                         </div>
-                          
-                            
-//                     </div>`;
-//             });
-//             studentTable.innerHTML = body;
-
-//         })
-//         .catch(error => console.log('error', error));
-
-// }
-
-
+loadProfile();
 
 function search(){
     const srarchBarVal = document.getElementById("searchBar").value;

@@ -103,7 +103,7 @@ input{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.student-tbl td button{
+.btn{
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -114,22 +114,23 @@ input{
     cursor: pointer;
 
 }
+
 .student-tbl td button:hover{
     background-color: black;
     border: 2px solid white;
 }
 
 .profile{
-    background-color: #E0E0E0;
+    background: linear-gradient(90deg, rgba(12,94,73,1) 36%, rgba(58,180,146,1) 100%);
     width: 100%;
     margin-right: 10%;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .title{
     padding: 4%;
-    border: 1px solid white;
 }
 .profile-h2{
     text-align: center;
@@ -184,10 +185,11 @@ input{
 .div2{
     display: flex;
     flex-wrap: wrap;
-    background-color: #E0E0E0;
+    background-color: #F4F4F4;
 }
 .box{
     background-color: white;
+    border: 2px solid #A0A0A0;
    
     margin-top: 2%;
     margin-left: 2%;
@@ -209,7 +211,7 @@ input{
 .div4{
     display: flex;
     flex-wrap: wrap;
-    background-color: #E0E0E0;
+    background-color: #F4F4F4;
 }
 .div5{
     background-color: #009A7E;
@@ -221,5 +223,5 @@ input{
 .div6{
     display: flex;
     flex-wrap: wrap;
-    background-color: #E0E0E0;
+    background-color: #F4F4F4;
 }
