@@ -1,3 +1,7 @@
+const btnRegister = document.getElementById("buttonRegister");
+
+
+btnRegister.addEventListener("click",()=>{
 const firstName = document.getElementById("txtFName");
 const lastName = document.getElementById("txtLName");
 const userName = document.getElementById("txtUserName");
@@ -12,15 +16,16 @@ const guardiansAddress = document.getElementById("txtGuardiansPhone");
 const guardiansPhone = document.getElementById("txtGuardiansAddress");
 const guardiansEmail = document.getElementById("txtGuardiansEmail");
 
-const btnRegister = document.getElementById("buttonRegister");
 
-btnRegister.addEventListener("click",()=>{
+
+
     let selectGender;
     for(i =0; i<gender.length; i++){
         if(gender[i].checked){
             selectGender=gender[i].value;
         }
     }
+
 
     let student = {
         "firstName" : firstName.value,
@@ -37,15 +42,23 @@ btnRegister.addEventListener("click",()=>{
         "guardiansPhoneNumber" : guardiansPhone.value,
         "guardiansEmail" : guardiansEmail.value
     }
+   let studentJSOBJ= JSON.stringify(student);
 
-    fetch('http://localhost:8080/student',{
-        method: 'POST',
-        headers: {
-            'Content-type':'application/json' 
-        },
-        body: JSON.stringify(student)
-    })
-    .then(response => response.json())
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+    
+    
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: studentJSOBJ,
+      redirect: 'follow'
+    };
+    
+    fetch("http://localhost:8080/student", requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
     if(firstName.value=="" | 
     lastName.value=="" | 
     userName.value=="" |
@@ -62,6 +75,7 @@ btnRegister.addEventListener("click",()=>{
         alert("Registered Failed");
     }else{
         alert("Registered Success");
-        window.open("../dashboard.html","_top");
-    }
+        window.open("./dashboard.html","_top")
+       
+}
 })

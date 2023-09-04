@@ -151,6 +151,15 @@ input{
     height: 50%;
     background-color: white;
 }
+.btnDelete{
+    margin-top: 15%;
+    margin-left: 28%;
+    padding: 2%;
+    width: 70px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
 .image{
     width: 150px;
     height: 150px;

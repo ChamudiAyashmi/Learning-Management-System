@@ -53,7 +53,12 @@ studentTable.addEventListener('click', function(event) {
                         <div class="image-div">
                             <div class="image"></div>
                             <h2 class="name">${element.firstName}</h2>
-                        </div>
+                            <input type="button" class="btnDelete" value="Delete" id="btnDelete" onclick="deleteStudent(${element.id})">
+                            </div>
+                        
+
+
+                       
                         <div class="right">
                             <div class="div1">
                                 <h3>Personal Details</h3>
@@ -112,7 +117,6 @@ studentTable.addEventListener('click', function(event) {
                 </div>`;
                 });
                 studentTable.innerHTML = body;
-    
             })
             .catch(error => {
                 console.error('Error fetching data:', error);
@@ -208,4 +212,17 @@ function search(){
         })
         .catch(error => console.log('error', error));
 
+}
+
+function deleteStudent(id){
+    var requestOptions = {
+        method: 'DELETE',
+        // headers: myHeaders,
+        redirect: 'follow'
+      };
+      
+      fetch(`http://localhost:8080/student/${id}`, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
 }
