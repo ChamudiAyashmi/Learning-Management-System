@@ -54,8 +54,7 @@ studentTable.addEventListener('click', function(event) {
                     </div>
                     <div class="content">
                         <div class="image-div">
-                            <div class="image">
-                           
+                            <div class="image" style = "background-image: url('images/${element.imageName}')">
                             </div>
                             <h2 class="name">${element.firstName}</h2>
                             <input type="button" class="btnDelete" value="Delete" id="btnDelete" onclick="deleteStudent(${element.id})">
@@ -152,9 +151,13 @@ function search(){
                 </div>
                 <div class="content">
                     <div class="image-div">
-                        <div class="image" style="background-image : url('${element.imagePath}');"></div>
-                        <h2 class="name">${element.firstName}</h2>
+                    <div class="image" style = "background-image: url('images/${element.imageName}')">
                     </div>
+                        <h2 class="name">${element.firstName}</h2>
+                        <input type="button" class="btnDelete" value="Delete" id="btnDelete" onclick="deleteStudent(${element.id})">
+
+                    </div>
+
                     <div class="right">
                         <div class="div1">
                             <h3>Personal Details</h3>
@@ -222,12 +225,13 @@ function search(){
 function deleteStudent(id){
     var requestOptions = {
         method: 'DELETE',
-        // headers: myHeaders,
         redirect: 'follow'
       };
       
       fetch(`http://localhost:8080/student/${id}`, requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
+        alert("Delete Successfully");
+        window.open("../dashboard.html","_top")
         .catch(error => console.log('error', error));
 }

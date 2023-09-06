@@ -143,9 +143,6 @@ input{
     background-color: #F4F4F4;
     display: flex;
 }
-.image{
-    /* background-color: #009A7E; */
-}
 .image-div{
     border: 1px solid white;
     padding: 4%;
@@ -172,9 +169,9 @@ input{
     border-radius: 100px;
     border: 1px solid white;
     background-color: #E0E0E0;
-    /* background: url("E:/ICET/Spring projects/Learning Management System/Front End/images/feeae0dd24708c62105e58ff1953a029.png");
+    /* background: url("E:/ICET/Spring projects/Learning Management System/Front End/images/feeae0dd24708c62105e58ff1953a029.png");*/
     background-size: cover;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat; 
 
 }
 .name{
