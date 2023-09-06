@@ -13,6 +13,8 @@ fetch("http://localhost:8080/student")
                     <th>Age</th>
                     <th>Address</th>
                     <th>Phone Number</th>
+                    
+
                     </tr>`
     res.forEach(element => {
         
@@ -24,6 +26,7 @@ fetch("http://localhost:8080/student")
                     <td>${element.age}</td>
                     <td>${element.address}</td>
                     <td>${element.phoneNumber}</td>
+
                     </tr>`;
 
     });
@@ -32,7 +35,7 @@ fetch("http://localhost:8080/student")
 
 // Add an event listener to the table itself and use event delegation to capture button clicks
 studentTable.addEventListener('click', function(event) {
-    if (event.target.tagName === 'BUTTON') {
+    if (event.target.tagName === 'BUTTON') {   
         const buttonValue = event.target.textContent; // Get the text inside the button
 
         // Perform a fetch request when a button is clicked
@@ -51,7 +54,9 @@ studentTable.addEventListener('click', function(event) {
                     </div>
                     <div class="content">
                         <div class="image-div">
-                            <div class="image"></div>
+                            <div class="image">
+                           
+                            </div>
                             <h2 class="name">${element.firstName}</h2>
                             <input type="button" class="btnDelete" value="Delete" id="btnDelete" onclick="deleteStudent(${element.id})">
                             </div>
@@ -147,7 +152,7 @@ function search(){
                 </div>
                 <div class="content">
                     <div class="image-div">
-                        <div class="image"></div>
+                        <div class="image" style="background-image : url('${element.imagePath}');"></div>
                         <h2 class="name">${element.firstName}</h2>
                     </div>
                     <div class="right">
