@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
    background-color: #009A7E;
 }
@@ -15,7 +14,6 @@ body{
     justify-content: space-between;
     margin-top: 2%;
 }
-
 .logo{
     color: white;
     text-decoration: none;
@@ -29,7 +27,6 @@ body{
 .navbar{
     margin-right: 4%;
 }
-
 .navbar a{
     padding: 10px;
     margin-left: 25px;
@@ -37,7 +34,6 @@ body{
     color: white;
     font-size: 20px;
 }
-
 input{
     height: 30px;
     background: transparent;
@@ -47,12 +43,10 @@ input{
     color: white;
     font-size: 16px;
  }
-
- input ::placeholder{
+input ::placeholder{
     color: white;
- }
-
- .btnSearch{
+}
+.btnSearch{
     height: 30px;
     width: 25px;
     border-radius: 5px;
@@ -62,7 +56,6 @@ input{
     color: white;
     font-size: 20px;
  }
-
 .btnRegister{
     margin-left: 20px;
     color: white;
@@ -102,7 +95,6 @@ input{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .btn{
     width: 40px;
     height: 40px;
@@ -112,14 +104,11 @@ input{
     border: 1px solid white;
     font-size: 18px;
     cursor: pointer;
-
 }
-
 .student-tbl td button:hover{
     background-color: black;
     border: 2px solid white;
 }
-
 .profile{
     background: linear-gradient(90deg, rgba(12,94,73,1) 36%, rgba(58,180,146,1) 100%);
     width: 100%;
@@ -171,7 +160,6 @@ input{
     background-color: #E0E0E0;
     background-size: cover;
     background-repeat: no-repeat; 
-
 }
 .name{
     text-align: center;
@@ -205,7 +193,6 @@ input{
 .box{
     background-color: white;
     border: 2px solid #A0A0A0;
-   
     margin-top: 2%;
     margin-left: 2%;
     margin-bottom: 2%;

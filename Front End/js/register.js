@@ -1,6 +1,5 @@
 const btnRegister = document.getElementById("buttonRegister");
 
-
 btnRegister.addEventListener("click", () => {
     const firstName = document.getElementById("txtFName");
     const lastName = document.getElementById("txtLName");
@@ -42,62 +41,27 @@ btnRegister.addEventListener("click", () => {
     formData.append("guardiansEmail", guardiansEmail.value);
     formData.append("file", image.files[0]);
 
-
-
-
-
-
-    //     let student = {
-    //         "firstName" : firstName.value,
-    //         "lastName" : lastName.value,
-    //         "userName" : userName.value,
-    //         "password" : password.value,
-    //         "emailAddress" : email.value,
-    //         "age" : age.value,
-    //         "address" : address.value,
-    //         "phoneNumber" : phoneNumber.value,
-    //         "gender" : selectGender,
-    //         "guardiansName":guardiansName.value,
-    //         "guardiansAddress" : guardiansAddress.value,
-    //         "guardiansPhoneNumber" : guardiansPhone.value,
-    //         "guardiansEmail" : guardiansEmail.value
-    //     }
-    //    let studentJSOBJ= JSON.stringify(student);
-
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-
     var requestOptions = {
         method: 'POST',
-       
         body: formData,
-       
     };
 
     fetch("http://localhost:8080/student", requestOptions)
-        .then(response => response.text())
-        .then(result => console.log(result))
+        .then(response => response.json())
+        .then(result => {
+            if (result == true) {
+                console.log(result);
+                alert("Registered Success");
+                window.open("dashboard.html")
+            } else {
+                alert("Registered Failed");
+            }
+        })
         .catch(error => console.log('error', error));
-    if (firstName.value == "" |
-        lastName.value == "" |
-        userName.value == "" |
-        password.value == "" |
-        email.value == "" |
-        age.value == "" |
-        address.value == "" |
-        phoneNumber.value == "" |
-        gender.value == "" |
-        guardiansName.value == "" |
-        guardiansAddress.value == "" |
-        guardiansPhone.value == "" |
-        guardiansEmail.value == "") {
-        alert("Registered Failed");
-    } else {
-        // alert("Registered Success");
-        window.open("dashboard.html", "_top")
 
-    }
 })
     .catch(error => {
 

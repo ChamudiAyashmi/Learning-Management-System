@@ -3,19 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
    background-color: #009A7E;
 }
 
 /* header section */
-
 .header{
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
 }
-
 .logo{
     color: white;
     text-decoration: none;
@@ -29,8 +26,7 @@ body{
 .navbar{
     margin-right: 4%;
 }
-
-.navbar a{
+ .navbar a{
     padding: 10px;
     margin-left: 25px;
     text-decoration: none;
@@ -74,13 +70,11 @@ body{
 .register .image img{
     width: 100%;
 }
-
 .register-content{
     max-width: 50%;
     padding: 28px;
     overflow: hidden;
 }
-
 h2{
     font-size: 26px;
     font-weight: bold;
@@ -103,7 +97,6 @@ h2{
 .regi-input-box:nth-child(2n){
     justify-content: end;
 }
-
 .regi-input-box label, .gender-title{
     width: 95%;
     font-weight: bold;
@@ -113,7 +106,6 @@ h2{
 .gender-title{
     font-size: 16px;
 }
-
 .regi-input-box input{
     height: 35px;
     width: 95%;
@@ -130,24 +122,19 @@ h2{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .regi-input-box input:is(:focus,:valid){
     box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
-
 .gender-category label{
     padding: 0 20px 0 5px;
     font-size: 16px;
 }
-
 .gender-category{
     color: #333;
 }
-
 .gender-category label, .gender-category input{
     cursor: pointer;
 }
-
 h3{
     margin-top: 4%;
 }
@@ -162,7 +149,6 @@ h3{
     border: none;
     cursor: pointer;
     transition: 0.3s;
-
 }
 #buttonRegister a{
     color: white;

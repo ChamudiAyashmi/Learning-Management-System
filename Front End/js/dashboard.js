@@ -1,10 +1,10 @@
 let studentTable = document.getElementById("tbl");
 
 fetch("http://localhost:8080/student")
-.then(response => response.json())
-.then(res => {
+    .then(response => response.json())
+    .then(res => {
 
-    let tblBody = `
+        let tblBody = `
                     <tr>
                     <th>Student Id</th>
                     <th>First Name</th>
@@ -13,12 +13,10 @@ fetch("http://localhost:8080/student")
                     <th>Age</th>
                     <th>Address</th>
                     <th>Phone Number</th>
-                    
-
                     </tr>`
-    res.forEach(element => {
-        
-        tblBody += `<tr>
+        res.forEach(element => {
+
+            tblBody += `<tr>
                     <td><button class="btn" id="btnId">${element.id}</button></td>
                     <td>${element.firstName}</td>
                     <td>${element.lastName}</td>
@@ -29,22 +27,22 @@ fetch("http://localhost:8080/student")
 
                     </tr>`;
 
-    });
-    studentTable.innerHTML = tblBody;
-})
+        });
+        studentTable.innerHTML = tblBody;
+    })
 
 // Add an event listener to the table itself and use event delegation to capture button clicks
-studentTable.addEventListener('click', function(event) {
-    if (event.target.tagName === 'BUTTON') {   
+studentTable.addEventListener('click', function (event) {
+    if (event.target.tagName === 'BUTTON') {
         const buttonValue = event.target.textContent; // Get the text inside the button
 
         // Perform a fetch request when a button is clicked
         fetch(`http://localhost:8080/student/${buttonValue}`)
             .then(response => response.json())
-            .then(result =>{
+            .then(result => {
                 let body = ``
                 result.forEach(element => {
-                    
+
                     body += `
                       
                     <div class="profile">
@@ -59,10 +57,6 @@ studentTable.addEventListener('click', function(event) {
                             <h2 class="name">${element.firstName}</h2>
                             <input type="button" class="btnDelete" value="Delete" id="btnDelete" onclick="deleteStudent(${element.id})">
                             </div>
-                        
-
-
-                       
                         <div class="right">
                             <div class="div1">
                                 <h3>Personal Details</h3>
@@ -128,20 +122,20 @@ studentTable.addEventListener('click', function(event) {
     }
 });
 
-function search(){
+function search() {
     const srarchBarVal = document.getElementById("searchBar").value;
-    
+
     var requestOptions = {
         method: 'GET',
         redirect: 'follow'
-      };
-      
-      fetch(`http://localhost:8080/student/byFirstName/${srarchBarVal}`, requestOptions)
+    };
+
+    fetch(`http://localhost:8080/student/byFirstName/${srarchBarVal}`, requestOptions)
         .then(response => response.json())
-        .then(result =>{
+        .then(result => {
             let body = ``
             result.forEach(element => {
-                
+
                 body += `
                   
                 <div class="profile">
@@ -219,19 +213,18 @@ function search(){
 
         })
         .catch(error => console.log('error', error));
-
 }
 
-function deleteStudent(id){
+function deleteStudent(id) {
     var requestOptions = {
         method: 'DELETE',
         redirect: 'follow'
-      };
-      
-      fetch(`http://localhost:8080/student/${id}`, requestOptions)
+    };
+
+    fetch(`http://localhost:8080/student/${id}`, requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))
-        alert("Delete Successfully");
-        window.open("../dashboard.html","_top")
+    alert("Delete Successfully");
+    window.open("../dashboard.html", "_top")
         .catch(error => console.log('error', error));
 }

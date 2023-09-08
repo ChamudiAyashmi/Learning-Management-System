@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
    background-color: #009A7E;
 }
@@ -15,7 +14,6 @@ body{
     justify-content: space-between;
     margin-top: 2%;
 }
-
 .logo{
     color: white;
     text-decoration: none;
@@ -29,7 +27,6 @@ body{
 .navbar{
     margin-right: 4%;
 }
-
 .navbar a{
     padding: 10px;
     margin-left: 25px;
@@ -37,9 +34,7 @@ body{
     color: white;
     font-size: 20px;
 }
-
 .section1{
-    
     margin-left: 6%;
     margin-right: 4%;
     margin-top: 2%;
@@ -47,41 +42,33 @@ body{
 .tbl{
     display: flex;
     flex-wrap: wrap;
-
 }
-
 .testmonals-col{
     background-color: white;
     width: 320px;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    
-
- }
-
- .testmonals-col h2{
+}
+.testmonals-col h2{
     padding: 5px;
     text-align: center;
     color: #009A7E;
-    
- }
- .testmonals-col button{
+}
+.testmonals-col button{
     width: 65px;
     height: 25px;
     background-color: black;
     color: white;
     border-radius: 5px;
     margin: 2%;
-    
- }
- .span{
+}
+.span{
     font-size: 18px;
     margin: 2%;
     font-family: Arial, Helvetica, sans-serif;
  }
-
- input{
+input{
     height: 30px;
     background: transparent;
     border: 1px solid white;
@@ -91,11 +78,10 @@ body{
     font-size: 16px;
  }
 
- input ::placeholder{
+input ::placeholder{
     color: white;
  }
-
- .btnSearch{
+.btnSearch{
     height: 30px;
     width: 25px;
     border-radius: 5px;
@@ -105,10 +91,7 @@ body{
     color: white;
     font-size: 20px;
  }
-
-
- .section1{
-   
+.section1{
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 2%;

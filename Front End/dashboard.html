@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +8,31 @@
     <link rel="stylesheet" href="css/dashboard.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-            <!-- header section -->
+    <!-- header section -->
 
-            <header class="header">
+    <header class="header">
 
-                <a href="" class="logo">Smart<span>Study</span></a>
-        
-                <nav class="navbar">
-                    <a href="index.html">Home</a>    
-                    <a href="dashboard.html">Students</a>
-                    <input id="searchBar" type="text" placeholder="search">
-                    <button class="btnSearch" onclick="search()" id="btnSearch"><i class='bx bx-search-alt-2'></i></button>
-                    <a href="register.html"><button class="btnRegister">Register</button></a>
-                </nav>
-    
-            </header>
+        <a href="" class="logo">Smart<span>Study</span></a>
 
-            <section class="view-students">
-                <div class="table-content">
-                    <table class="student-tbl" id="tbl"></table>
-               
-                </div>
-            </section>
-            <script src="js/dashboard.js"></script>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Students</a>
+            <input id="searchBar" type="text" placeholder="search">
+            <button class="btnSearch" onclick="search()" id="btnSearch"><i class='bx bx-search-alt-2'></i></button>
+            <a href="register.html"><button class="btnRegister">Register</button></a>
+        </nav>
 
+    </header>
 
-            
-    
+    <section class="view-students">
+        <div class="table-content">
+            <table class="student-tbl" id="tbl"></table>
+
+        </div>
+    </section>
+    <script src="js/dashboard.js"></script>
+
 </body>
 </html>
