@@ -135,7 +135,7 @@ input{
 .profile-h2{
     text-align: center;
     font-size: 35px;
-    color: black;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .content{
@@ -169,7 +169,6 @@ input{
     border-radius: 100px;
     border: 1px solid white;
     background-color: #E0E0E0;
-    /* background: url("E:/ICET/Spring projects/Learning Management System/Front End/images/feeae0dd24708c62105e58ff1953a029.png");*/
     background-size: cover;
     background-repeat: no-repeat; 
 

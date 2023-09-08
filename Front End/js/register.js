@@ -94,8 +94,8 @@ btnRegister.addEventListener("click", () => {
         guardiansEmail.value == "") {
         alert("Registered Failed");
     } else {
-        alert("Registered Success");
-        window.open("./dashboard.html", "_top")
+        // alert("Registered Success");
+        window.open("dashboard.html", "_top")
 
     }
 })
